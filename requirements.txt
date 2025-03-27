@@ -1,0 +1,15 @@
+# requirements.txt
+streamlit
+pandas
+python-dotenv
+openai>=1.0.0
+pydantic
+
+# --- LangChain ---
+langchain>=0.1.0 # Или конкретная версия типа langchain==0.1.20
+langchain-openai
+langchain-community
+
+# --- RAG компоненты ---
+faiss-cpu
+sentence-transformers
