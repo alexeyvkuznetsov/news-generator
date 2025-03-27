@@ -47,7 +47,7 @@ with col1:
     selected_date_str = selected_date.strftime("%d %B %Y")
 
     # Опционально: выбор стиля эпохи
-    era_options = ["XVIII", "XIX", "XVII", "XX"] # Добавьте нужные
+    era_options = ["XIX", "XVIII", "XVII", "XX"] # Добавьте нужные
     selected_era = st.selectbox("Стиль какого века предпочитаете?", era_options, index=0)
 
     num_articles = st.slider("Количество новостей в сводке:", min_value=1, max_value=5, value=3)
