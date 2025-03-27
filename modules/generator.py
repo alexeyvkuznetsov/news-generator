@@ -45,7 +45,7 @@ def get_llm():
         raise ValueError("FORGETAPI_BASE_URL не найден.")
 
     llm = ChatOpenAI(
-        model="gpt-3.5-turbo", # Или другая модель, доступная через ваш BASE_URL
+        model="gpt-4o", # Или другая модель, доступная через ваш BASE_URL
         openai_api_key=API_KEY,
         openai_api_base=BASE_URL,
         temperature=0.7,
