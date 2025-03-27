@@ -77,22 +77,24 @@
 
 ## 4. Структура проекта
 
-исторический-вестник/\n
-├── .env # Секреты для локального запуска (не в Git!)
+```
+исторический-вестник/
+├── .env                   # Секреты для локального запуска (не в Git!)
 ├── data/
-│ └── historical_events.csv # Исходные данные
-├── faiss_index_historical/ # Папка с готовым индексом FAISS
-│ ├── index.faiss # Файл индекса
-│ └── index.pkl # Файл метаданных индекса
-├── modules/ # Модули Python с основной логикой
-│ ├── init.py
-│ ├── generator.py # Логика генерации: вызов RAG, LLM, парсинг
-│ ├── models.py # Pydantic модели для структуры данных
-│ └── rag.py # Логика RAG: загрузка индекса, создание ретривера
-├── app.py # Главный файл Streamlit приложения (UI)
-├── requirements.txt # Зависимости Python
+│   └── historical_events.csv # Исходные данные
+├── faiss_index_historical/  # Папка с готовым индексом FAISS
+│   ├── index.faiss        # Файл индекса
+│   └── index.pkl          # Файл метаданных индекса
+├── modules/               # Модули Python с основной логикой
+│   ├── __init__.py        # Маркер пакета Python (может быть пустым)
+│   ├── generator.py       # Логика генерации: вызов RAG, LLM, парсинг
+│   ├── models.py          # Pydantic модели для структуры данных
+│   └── rag.py             # Логика RAG: загрузка индекса, создание ретривера
+├── app.py                 # Главный файл Streamlit приложения (UI)
+├── requirements.txt       # Зависимости Python
 ├── create_vector_db.ipynb # (Опционально) Jupyter/Colab ноутбук для генерации индекса
-└── README.md # Этот файл
+└── README.md              # Этот файл
+```
 
 ## 5. Технические особенности
 
