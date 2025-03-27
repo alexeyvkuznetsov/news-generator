@@ -36,7 +36,7 @@ st.caption("Генератор псевдо-исторических новос�
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    default_date = datetime.date(1789, 7, 14)
+    default_date = datetime.date(1800, 1, 1)
     selected_date = st.date_input(
         "Выберите дату для выпуска газеты:",
         value=default_date,
